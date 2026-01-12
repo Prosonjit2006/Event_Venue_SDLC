@@ -1,206 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Managament System</title>
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <!-- bootstrap css link -->
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+    <!-- style css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- media css link -->
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Managament System</title>
-  <!-- font awsome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-  <!-- bootstrap css link -->
-  <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
-  <!-- style css link -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- media css link -->
-   <link rel="stylesheet" href="./css/media.css">
-</head>
-
-<!-- body part -->
-<body>
+  <!-- body part -->
+  <body>
     <!-- header part -->
     <header>
-      <!-- navbar-start -->
-    <nav class="navbar navbar-expand-lg  nav-color ">
-      <div class="container">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Toggle -->
-          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-            data-bs-target="#eventraNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link active text-white " aria-current="page" href="#">-91 2345 678909</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-white " aria-current="page" href="#">email@gmail.com</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link active text-white" aria-current="page" href="#">Help</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav  mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Newsletter</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">SignUp/LogIn</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link active text-white" aria-current="page" href="#"><img src="./images/round-button.png"
-                  alt="Logo"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- main part -->
-   <main>
-    <!-- banner part -->
-       <section class="banner">
+      <!-- topbar-part -->
+      <nav class="navbar navbar-expand-lg nav-color">
         <div class="container">
-          <h1 >Event Venue</h1>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Toggle -->
+            <button
+              class="navbar-toggler text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#eventraNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >-91 2345 678909</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >email@gmail.com</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Help</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Newsletter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >SignUp/LogIn</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  ><img src="./images/round-button.png" alt="Logo"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
-       </section>
+      </nav>
+    </header>
+    <!-- main part -->
+    <main>
+      <!-- banner part -->
+      <section class="banner">
+        <div class="container">
+          <h1>Event Venue</h1>
+        </div>
+      </section>
 
-
-       <!-- venue-details -->
-       <section class="vanue-details section-padding">
-        <div class="container text-white" >
+      <!-- venue-details -->
+      <section class="venue-details section-padding">
+        <div class="container text-white">
           <h2 class="text-center">Our first venue details:</h2>
 
           <!-- row -->
           <div class="row">
-            <div class="col-12 col-md-4">
-              <h3 >
-                AQUATICA
-              </h3>
-                <figure><img src="./images/vanue-details.png" alt="venue location"></figure>
+            <div class="col-12 col-md-4 location-left-part">
+              <h3>AQUATICA</h3>
+              <figure>
+                <img src="./images/vanue-details.png" alt="venue location" />
+              </figure>
             </div>
-            <div class="col-12 col-md-8 ">
-              <h3>Key Location Details:</h3>
+            <div class="col-12 col-md-8 location-right-part">
+              <h3 class="mb-5">Key Location Details:</h3>
               <ul class="location_details">
-                <li>Area: Kochpukur, P.O.- Hatgachia</li>
-                <li>Near: Rajarhat, New Town</li>
-                <li>Address: Kouchpukur, P.O Hathgachia, P.S. :K.L.C, </li>
-                <li>Thakdari Road, Township, Near Rajarhat, Dhapa Manpur P, </li>
+                <li>Area: Kochpukur, P.O.- Hatgachia</li>
+                <li>Near: Rajarhat, New Town</li>
+                <li>Address: Kouchpukur, P.O Hathgachia, P.S. :K.L.C,</li>
+                <li>Thakdari Road, Township, Near Rajarhat, Dhapa Manpur P,</li>
                 <li>West Bengal 700156</li>
               </ul>
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12465.761192931428!2d88.41063804653551!3d22.649282931742974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1768215732248!5m2!1sen!2sin"
+                  width="800"
+                  height="260"
+                  style="border: 0"
+                  allowfullscreen="false"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- explore some clicks -->
+      <section class="explore-section section-padding">
+        <div class="container">
+          <h2>Explore some click :</h2>
+
+          <div class="row align-items-stretch">
+            <!-- left column -->
+            <div class="col-lg-3 col-md-4">
+              <div class="row g-4">
+                <div class="col-12">
+                  <figure>
+                    <img src="images/clicks/1.png" alt="img1" />
+                  </figure>
+                </div>
+
+                <div class="col-12">
+                  <figure>
+                    <img src="images/clicks/3.png" alt="img3" />
+                  </figure>
+                </div>
+
+                <div class="col-12">
+                  <figure>
+                    <img src="images/clicks/4.png" alt="img4" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <!-- right big img -->
+            <div class="col-lg-9 col-md-8">
+              <div class="row g-4">
+                <div class="col-lg-12">
+                  <figure>
+                    <img src="images/clicks/2.png" alt="img2" />
+                  </figure>
+                </div>
+
+                <!-- bottom img stag -->
+
+                <div class="col-lg-3 col-md-">
+                  <figure>
+                    <img src="images/clicks/5.png" alt="img5" />
+                  </figure>
+                </div>
+
+                <div class="col-lg-6 col-md-">
+                  <figure class="mid-img">
+                    <img src="images/clicks/6.png" alt="img6" />
+                  </figure>
+                </div>
+                <div class="col-lg-3 col-md-">
+                  <figure>
+                    <img src="images/clicks/7.png" alt="img7" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- secound venue-details -->
+      <section class="venue-details section-padding">
+        <div class="container text-white">
+          <h2 class="text-center">Our second venue details:</h2>
+
+          <!-- row -->
+          <div class="row">
+            <div class="col-12 col-md-4 location-left-part">
+              <h3>EDEN GARDEN</h3>
+              <figure>
+                <img
+                  src="./images/secound-vanue-details.png"
+                  alt="secound vanue location"
+                />
+              </figure>
+            </div>
+            <div class="col-12 col-md-8 location-right-part">
+              <h3 class="mb-5">Key Location Details:</h3>
+              <ul class="location_details-2">
+                <li>
+                  Address: Gostho Paul Sarani, Maidan, B.B.D. Bagh, Kolkata,
+                </li>
+                <li>West Bengal 700021, India.</li>
+                <li>Landmark: Near Babughat and B.B.D. Bagh.</li>
+                <li>Nearest Metro: Esplanade.</li>
+              </ul>
+              <div class="map-2">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118668.00410634727!2d88.19087949726563!3d22.564578800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02779ff7e5b9af%3A0x1d1b1884bdbbbd79!2sEden%20Gardens!5e1!3m2!1sen!2sin!4v1768219487181!5m2!1sen!2sin"
+                  width="720"
+                  height="288"
+                  style="border: 0"
+                  allowfullscreen="false"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer part-->
+    <footer class="footer pt-5">
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Left Content -->
+          <div class="col-lg-4">
+            <div class="d-flex mb-3 footer-logo">
+              <img src="./images/footer-logo.png" alt="logo" />
+            </div>
+            <h2 class="fw-bold">
+              Stay Updated, stay <br />
+              connected
+            </h2>
+            <p class="text-white">
+              A smarter way to explore trending <br />
+              events, local happenings, and exclusive <br />
+              live experiences.
+            </p>
+
+            <div class="social-icons mt-3">
+              <a href="#"><img src="./images/facebook.png" alt="facebook" /></a>
+              <a href="#"
+                ><img src="./images/instagram.png" alt="instagram"
+              /></a>
+              <a href="#"><img src="./images/x-icon.png" alt="x-icon" /></a>
             </div>
           </div>
 
+          <!-- Newsletter -->
+          <div class="col-lg-8">
+            <h5 class="mb-3">Get Our News Updates</h5>
+            <form class="d-flex gap-2 justify-content-end">
+              <input
+                type="email"
+                class="form-control subscribe-input"
+                placeholder="Enter your email"
+              />
+              <button class="subscribe-btn">Subscribe</button>
+            </form>
+            <small class="text-white pt-5">
+              By subscribing you agree to our <u>privacy policy</u>
+            </small>
 
+            <!-- Links -->
+            <div class="row mt-4">
+              <div class="col-md-3">
+                <h6>Quick Links</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Team Details</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3">
+                <h6>Discover</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Nearby</a></li>
+                  <li><a href="#">Trending</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3">
+                <h6>Organization</h6>
+                <ul class="list-unstyled">
+                  <li><a href="#">Create Event</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Dashboard</a></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3">
+                <h6>Contact Us</h6>
+                <ul class="list-unstyled">
+                  <li>Phone: +91 80000 12345</li>
+                  <li>Email: support@eventra.com</li>
+                  <li>Address: Kolkata, West Bengal, India</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-       </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       
-
-   </main>
-
-  <!-- footer part-->
-<footer class="footer pt-5">
-  <div class="container">
-    <div class="row gy-4">
-
-      <!-- Left Content -->
-      <div class="col-lg-4">
-        <div class="d-flex mb-3 footer-logo">
-          <img src="./images/footer-logo.png" alt="logo">
-        </div>
-        <h2 class="fw-bold">Stay Updated, stay <br> connected</h2>
-        <p class="text-white">
-          A smarter way to explore trending <br> events, local happenings,
-          and exclusive <br> live experiences.
-        </p>
-
-        <div class="social-icons mt-3">
-          <a href="#"><img src="./images/facebook.png" alt="facebook"></a>
-          <a href="#"><img src="./images/instagram.png" alt="instagram"></a>
-          <a href="#"><img src="./images/x-icon.png" alt="x-icon"></a>
-        </div>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="col-lg-8">
-        <h5 class="mb-3">Get Our News Updates</h5>
-        <form class="d-flex gap-2 justify-content-end ">
-          <input type="email" class="form-control subscribe-input" placeholder="Enter your email">
-          <button class="subscribe-btn">Subscribe</button>
-        </form>
-        <small class="text-white pt-5">
-          By subscribing you agree to our <u>privacy policy</u>
-        </small>
-
-        <!-- Links -->
-        <div class="row mt-4">
-          <div class="col-md-3">
-            <h6>Quick Links</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Team Details</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-3">
-            <h6>Discover</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Nearby</a></li>
-              <li><a href="#">Trending</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-3">
-            <h6>Organization</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">Create Event</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Dashboard</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-3">
-            <h6>Contact Us</h6>
-            <ul class="list-unstyled">
-              <li>Phone: +91 80000 12345</li>
-              <li>Email: support@eventra.com</li>
-              <li>Address: Kolkata, West Bengal, India</li>
-            </ul>
-          </div>
+        <!-- Bottom Line -->
+        <div class="footer-bottom text-center py-3 mt-4">
+          <small>© 2026 Eventra. All Rights Reserved.</small>
         </div>
       </div>
-    </div>
+    </footer>
 
-    <!-- Bottom Line -->
-    <div class="footer-bottom text-center py-3 mt-4">
-      <small>© 2026 Eventra. All Rights Reserved.</small>
-    </div>
-  </div>
-</footer>
-
-  </footer>
-  <!-- footer-end -->
-  <!-- Add Proper.js via jsDelivr CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/properjs-app/dist/proper.min.js"></script>
-  <script src="./bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
-</body>
-
+    <!-- Add Proper.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/properjs-app/dist/proper.min.js"></script>
+    <!-- bootstrap js link -->
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
