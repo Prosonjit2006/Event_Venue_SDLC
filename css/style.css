@@ -194,7 +194,7 @@ figure{
 
 /* explore img part */
 
-.explore-section h2{
+.click-part-1 h2{
   text-align: center;
   margin-bottom: 130px;
   color: white;
@@ -215,9 +215,9 @@ figure{
 
 /* secound-venue-details */
 
-.explore-section h2{
+.heading-center{
   text-align: center;
-  margin-bottom: 130px;
+  margin-bottom: 65px;
   color: white;
 }
 
@@ -234,9 +234,19 @@ figure{
   margin-top: 80px;
 }
 
+/* .img-big{
+  height: 590px;
+} */
+.img-mid{
+  width: 448px;
+}
+.img-small{
+  height: 143px;
+}
+.img-small img{
+  border-radius: 28px;
 
-
-
+}
 
 
 
