@@ -1,22 +1,19 @@
 /* font family link */
 
 @font-face {
+  /* Montserrat */
   font-family: Montserrat;
   src: url(/font/Montserrat-VariableFont_wght.ttf);
 }
+
 @font-face {
-  font-family: Poppins;
-  src: url(/font/Poppins-SemiBold.ttf);
-}
-@font-face {
+  /* Poppins */
   font-family: Poppins;
   src: url(/font/Poppins-Regular.ttf);
 }
+
 @font-face {
-  font-family: Poppins;
-  src: url(/font/Poppins-Bold.ttf);
-}
-@font-face {
+  /* Inter */
   font-family: Inter;
   src: url(/font/Inter-VariableFont_opsz\,wght.ttf);
 }
@@ -25,6 +22,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  background-color: #34054fdd;
 }
 
 /* commom elements */
@@ -41,6 +41,24 @@ img {
   object-fit: cover;
 }
 
+
+/* heading */
+h1{
+  font-family: Montserrat;
+  font-size: 96px;
+  font-weight: normal;
+}
+h2{
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: normal;
+}
+h3{
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: bold;
+}
+
 /* common class */
 .container {
   max-width: 1530px;
@@ -49,8 +67,8 @@ img {
   padding: 0 15px;
 }
 .section-padding {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 65px;
+  padding-bottom: 90px;
 }
 
 /* topbar */
@@ -106,12 +124,39 @@ img {
 /* banner part  */
 
 .banner{
-  background-color: white;
-  height: 100vh;
+  /* height: 100vh; */
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* height: 689px; */
+  height: calc(100vh - 226px);
+  /* min-height: 50vh; */
+  background-blend-mode: overlay;
+  background-color: rgba(16, 9, 59, 0.3);
+}
+.banner .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
+.banner h1{
+  color: white;
+  margin-top: 70px;
+}
 
+/* venue details part */
 
+.vanue-details h2{
+  margin-bottom: 85px;
+}
+
+.location_details{
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: normal;
+}
 
 
 
