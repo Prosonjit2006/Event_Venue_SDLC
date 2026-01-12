@@ -1,0 +1,203 @@
+/* font family link */
+
+@font-face {
+  font-family: Montserrat;
+  src: url(/font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(/font/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(/font/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(/font/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: Inter;
+  src: url(/font/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* commom elements */
+ul {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* common class */
+.container {
+  max-width: 1530px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section-padding {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* topbar */
+.nav-color {
+  background-color: #1c002d;
+}
+.nav-color a {
+  font-size: 14px;
+  font-family: Poppins, "SemiBold";
+}
+
+/* navbar part */
+.navbar{
+  z-index: 999;
+}
+.eventra-navbar {
+  background: linear-gradient(90deg, #3a2a55, #8c8655, #3a2a55);
+  border-radius: 24px;
+  padding: 10px 30px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.navbar-brand span {
+  color: #fff;
+}
+
+.nav-link {
+  color: #e8e8e8 !important;
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #0bcaee;
+}
+
+.nav-icons a {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 18px;
+  cursor: pointer;
+  width: 20.79px;
+}
+
+
+/* banner part  */
+
+.banner{
+  background-color: white;
+  height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer {
+  background: #070417;
+  color: #fff;
+}
+.footer-logo {
+  width: 286px;
+  height: 120px;
+}
+.footer h2 {
+  font-size: 36px;
+  font-family: Montserrat, "SemiBold";
+  color: #ffffffe5;
+}
+.footer p {
+  font-size: 16px;
+  font-family: Poppins, "Medium";
+  color: #e8e7ea;
+}
+.footer h5 {
+  font-size: 24px;
+  font-family: Montserrat, "SemiBold";
+  color: #ffffffe5;
+  margin-left: 500px;
+}
+.footer h6 {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Montserrat, "Bold";
+  background: linear-gradient(#ff52c0, #8ef1f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer small {
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 500px;
+}
+.footer a {
+  color: #e8e7ea;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Poppins, "Medium";
+}
+.footer a:hover {
+  color: #fff;
+}
+.subscribe-input {
+  padding: 16px 32px;
+  background: transparent;
+  border-radius: 16px;
+  width: 349px;
+}
+.subscribe-input::placeholder {
+  color: white;
+  padding-left: 20px;
+}
+
+.subscribe-btn {
+  border-radius: 30px;
+  padding: 16px 32px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: Poppins, "SemiBold";
+}
+.social-icons a {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #fff;
+}
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
