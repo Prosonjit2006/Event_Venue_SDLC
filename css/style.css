@@ -24,7 +24,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #34054fdd;
+  background-color: #1b0831;
 }
 
 /* commom elements */
@@ -73,6 +73,10 @@ h3 {
 figure {
   padding: 0;
   margin: 0;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 /* topbar part */
@@ -127,13 +131,11 @@ figure {
 /* banner part  */
 
 .banner {
-  /* height: 100vh; */
   background-image: url("../images/banner.png");
   background-repeat: no-repeat;
   background-size: contain;
   /* height: 689px; */
-  height: calc(100vh - 226px);
-  /* min-height: 50vh; */
+  height: calc(100vh - 200px);
   background-blend-mode: overlay;
   background-color: rgba(16, 9, 59, 0.3);
 }
@@ -159,10 +161,6 @@ figure {
   width: 415px;
   margin-top: 35px;
 }
-
-/* .location-right-part h3 {
-
-} */
 
 .location_details {
   font-family: Poppins;
@@ -213,9 +211,6 @@ figure {
   margin-top: 80px;
 }
 
-/* .img-big{
-  height: 590px;
-} */
 .img-mid {
   width: 448px;
 }
@@ -249,6 +244,9 @@ figure {
   border-radius: 28px;
 }
 /* fifth venue deatils */
+/* .fifth-vanue-details{
+
+} */
 /* click part 5 */
 
 .click-part-5 figure img {
@@ -260,6 +258,21 @@ figure {
 .click-part-5 .img-bigger {
   height: 605px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 .footer {
